@@ -20,6 +20,7 @@ pipeline {
       stage('Docker Build') {
 	 steps {
 	     echo "Docker build started"
-        }
+	 }
+      }
     }
 }
