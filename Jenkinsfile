@@ -17,5 +17,9 @@ pipeline {
 	     echo 'Hello World'
 	 }
       }
+      stage('Docker Build') {
+	 steps {
+	     echo "Docker build started"
+        }
     }
 }
