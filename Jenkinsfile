@@ -20,6 +20,9 @@ pipeline {
       stage('Docker Build') {
 	 steps {
 	     echo "Docker build started"
+	     
+	     pwsh(script: "docker images -a")
+	     
 	 }
       }
     }
